@@ -25,4 +25,12 @@ public class Digits {
         }
         return true;
     }
+
+    public String getDigitList(){
+        String result = "[";
+        for(int i = 0; i < digitList.size();i++){
+            result+= digitList.get(i) + ", ";
+        }
+        return result.substring(0,result.length()-2) + "]";
+    }
 }
